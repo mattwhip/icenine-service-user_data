@@ -1,0 +1,7 @@
+create_table("ud_configs") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("init_coins", "integer", {})
+	t.Column("init_rating", "float", {})
+	t.Column("init_rating_deviation", "float", {})
+	t.Column("init_rating_volatility", "float", {})
+}

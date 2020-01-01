@@ -1,0 +1,9 @@
+create_table("ud_users") {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("u_id", "string", {"size": 100})
+	t.Column("coins", "integer", {})
+	t.Column("rating", "float", {})
+	t.Column("rating_deviation", "float", {})
+	t.Column("rating_volatility", "float", {})
+}
+add_index("ud_users", "u_id", {"unique": true})
